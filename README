@@ -1,0 +1,8 @@
+This Javascript package provides functionality similar to <marquee> HTML tag.
+
+Supports:
+- continuous and scroll behaviors
+- ininite or limited loops
+- left-to-right and right-to-left directions
+
+Copyright (C) 2012  Mark Rolich

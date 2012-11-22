@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Marquee.js demo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.scroller {
+    overflow: hidden;
+    position: relative
+}
+
+#scroller {
+    width: 265px;
+}
+
+#scroller1,
+#scroller2,
+#scroller3,
+#scroller4 {
+    width: 498px;
+    margin: 5px;
+    border: solid 1px red
+}
+
+ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    float: left;
+    padding: 2px
+}
+
+ul li a {
+    padding: 3px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ccc
+}
+
+#scroller3 div {
+    width: 100px;
+    background-color: blue
+}
+</style>
+</head>
+<body>
+<pre>
+new Marquee('scroller');
+</pre>
+<div id="scroller" class="scroller">Demo of Marquee.js - Infinite scrolling text&nbsp;</div>
+<pre>
+new Marquee('scroller1');
+</pre>
+<div id="scroller1" class="scroller">
+    <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+        <li><a href="#">Item 5</a></li>
+        <li><a href="#">Item 6</a></li>
+        <li><a href="#">Item 7</a></li>
+        <li><a href="#">Item 8</a></li>
+        <li><a href="#">Item 9</a></li>
+        <li><a href="#">Item 10</a></li>
+    </ul>
+</div>
+<pre>
+new Marquee('scroller2', {
+    behavor: 'continuous',
+    direction: 'rtl',
+    step: 1,
+    ms: 1
+});
+</pre>
+<div id="scroller2" class="scroller">
+    <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+        <li><a href="#">Item 5</a></li>
+        <li><a href="#">Item 6</a></li>
+        <li><a href="#">Item 7</a></li>
+        <li><a href="#">Item 8</a></li>
+        <li><a href="#">Item 9</a></li>
+        <li><a href="#">Item 10</a></li>
+    </ul>
+</div>
+<pre>
+new Marquee('scroller3', {
+    behavior: 'scroll',
+    direction: 'ltr',
+    interrupt: 'no',
+    step: 5
+});
+</pre>
+<div id="scroller3" class="scroller">
+    <div>&nbsp;</div>
+</div>
+<pre>
+new Marquee('scroller4', {
+    behavior: 'continuous',
+    direction: 'ltr',
+    loops: 2,
+    step: 3
+});
+</pre>
+<div id="scroller4" class="scroller">
+    <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+        <li><a href="#">Item 5</a></li>
+        <li><a href="#">Item 6</a></li>
+        <li><a href="#">Item 7</a></li>
+        <li><a href="#">Item 8</a></li>
+        <li><a href="#">Item 9</a></li>
+        <li><a href="#">Item 10</a></li>
+    </ul>
+</div>
+
+<script type="text/javascript" src="marquee.min.js"></script>
+<script type="text/javascript">
+new Marquee('scroller');
+
+new Marquee('scroller1');
+
+new Marquee('scroller2', {
+    behavor: 'continuous',
+    direction: 'rtl',
+    step: 1,
+    ms: 1
+});
+
+new Marquee('scroller3', {
+    behavior: 'scroll',
+    direction: 'ltr',
+    interrupt: 'no',
+    step: 5
+});
+
+new Marquee('scroller4', {
+    behavior: 'continuous',
+    direction: 'ltr',
+    loops: 2,
+    step: 3
+});
+</script>
+</body>
+</html>
